@@ -1,0 +1,8 @@
+2019-04-14 21:39:19,784: [WARN] subFile : hello
+2019-04-14 21:39:19,784: [ERROR] subFile : message
+2019-04-14 21:39:19,784: [DEBUG] subFile : hello
+2019-04-14 21:39:19,784: [INFO] subFile : message
+2019-04-14 21:42:03,595: [WARN] subFile : hello
+2019-04-14 21:42:03,596: [ERROR] subFile : message
+2019-04-14 21:42:03,596: [DEBUG] subFile : hello
+2019-04-14 21:42:03,597: [INFO] subFile : message
