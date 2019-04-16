@@ -30,7 +30,7 @@ Category *getFileCategory()
     Category &root = Category::getRoot();
     root.setPriority(Priority::DEBUG);
 
-    Category &subFile = root.getInstance("subFile");
+    Category &subFile = root.getInstance("这里是%c");
     subFile.addAppender(pfileAppender);
     subFile.addAppender(pOsAppender);
     subFile.setPriority(Priority::DEBUG);
@@ -41,15 +41,27 @@ class Mylogger
 {
 public:
     static Mylogger *getInstance();
-    static void Myloggerfree();
+    static void Myloggerfree()
+    {
+        if(_pmylogger)
+        {
+            Category::shutdown();
+            delete _pmylogger;
+            _pmylogger = nullptr;
+            _pCategory = nullptr;
+            cout << "void Myloggerfree()" << endl;
+        }
+    }
     
     static void warn(const char*);
     static void error(const char*);
     static void debug(const char*);
     static void info(const char*);
 private:
-    Mylogger();
-    ~Mylogger();
+    Mylogger()
+    {  }
+    ~Mylogger()
+    {  }
     static Mylogger *_pmylogger;
     static Category *_pCategory;
 };
@@ -87,9 +99,14 @@ int main()
 {
     cout << "hello,world" << endl;
     Mylogger *log = Mylogger::getInstance();
-    log->warn("hello");
-    log->error("message");
-    log->debug("hello");
-    log->info("message");
+    char s1[100]={0};
+    sprintf(s1, "hello filename:%s funcname:%s linenum:%d", __FILE__, __func__, __LINE__);
+    log->warn(s1);
+    log->error(s1);
+    log->debug(s1);
+    log->info(s1);
+    //Category::shutdown();
+    //cout << "已shutdown()" << endl;
+    log->Myloggerfree();
     return 0;
 }

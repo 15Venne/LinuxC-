@@ -6,3 +6,35 @@
 2019-04-14 21:42:03,596: [ERROR] subFile : message
 2019-04-14 21:42:03,596: [DEBUG] subFile : hello
 2019-04-14 21:42:03,597: [INFO] subFile : message
+2019-04-15 09:25:52,783: [WARN] subFile : hello
+2019-04-15 09:25:52,783: [ERROR] subFile : message
+2019-04-15 09:25:52,784: [DEBUG] subFile : hello
+2019-04-15 09:25:52,784: [INFO] subFile : message
+2019-04-15 09:26:30,207: [WARN] subFile : hello
+2019-04-15 09:26:30,207: [ERROR] subFile : message
+2019-04-15 09:26:30,208: [DEBUG] subFile : hello
+2019-04-15 09:26:30,208: [INFO] subFile : message
+2019-04-15 09:30:06,430: [WARN] subFile : hello
+2019-04-15 09:30:06,431: [ERROR] subFile : message
+2019-04-15 09:30:06,431: [DEBUG] subFile : hello
+2019-04-15 09:30:06,432: [INFO] subFile : message
+2019-04-15 10:35:54,116: [WARN] subFile : hello
+2019-04-15 10:35:54,116: [ERROR] subFile : message
+2019-04-15 10:35:54,117: [DEBUG] subFile : hello
+2019-04-15 10:35:54,117: [INFO] subFile : message
+2019-04-15 14:27:02,826: [WARN] subFile : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-15 14:27:02,826: [ERROR] subFile : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-15 14:27:02,827: [DEBUG] subFile : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-15 14:27:02,827: [INFO] subFile : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-16 09:24:24,115: [WARN] 这里是%/c : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-16 09:24:24,116: [ERROR] 这里是%/c : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-16 09:24:24,117: [DEBUG] 这里是%/c : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-16 09:24:24,117: [INFO] 这里是%/c : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-16 09:25:42,956: [WARN] 这里是%%c : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-16 09:25:42,957: [ERROR] 这里是%%c : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-16 09:25:42,957: [DEBUG] 这里是%%c : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-16 09:25:42,957: [INFO] 这里是%%c : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-16 09:26:02,244: [WARN] 这里是%c : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-16 09:26:02,244: [ERROR] 这里是%c : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-16 09:26:02,245: [DEBUG] 这里是%c : hello filename:log4cpp.cc funcname:main linenum:103
+2019-04-16 09:26:02,245: [INFO] 这里是%c : hello filename:log4cpp.cc funcname:main linenum:103
