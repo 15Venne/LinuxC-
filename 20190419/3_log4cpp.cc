@@ -105,11 +105,13 @@ void loginfo(T t,Args... args)
 int main()
 {
     cout << "hello,world" << endl;
-    Mylogger *log = Mylogger::getInstance();
-    //LogInfo("info message");
+    //Mylogger *log = Mylogger::getInstance();
+  //  log->info("msg");
+
+    //LogInfo("msg");
     char s1[] = "helloworld";
     int num = 5;
-    loginfo("msg %s %d msg", s1, 5);
+    loginfo("msg %s %d msg", s1, num);
 	//LogWarn("warn message");
 	//LogDebug("debug message");
     

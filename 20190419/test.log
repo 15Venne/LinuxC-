@@ -9,3 +9,4 @@
 2019-04-19 23:34:20,993: [WARN] fileLog : [3_log4cpp.cc:main:102] warn message
 2019-04-19 23:34:20,993: [DEBUG] fileLog : [3_log4cpp.cc:main:103] debug message
 2019-04-19 23:48:09,094: [INFO] fileLog : [3_log4cpp.cc:loginfo:102] msg helloworld 5 msg
+2019-04-20 14:12:24,919: [INFO] fileLog : [3_log4cpp.cc:loginfo:102] msg helloworld 5 msg
