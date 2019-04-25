@@ -37,12 +37,6 @@ public:
 
     void valuenodeInsert(int key, int value)
     {
-        if(_cache[key].alive == 1)
-        {
-            cout << "key already exists" << endl;
-            get(key);
-            return;
-        }
         _cache[key].alive = 1;
         _cache[key].value = value;
         _cache[key].key = key;
@@ -124,6 +118,13 @@ public:
 
     void put(int key,int value)
     {
+        if(_cache[key].alive == 1)
+        {
+         //   cout << "key already exists" << endl;
+            _cache[key].value = value;
+            get(key);
+            return;
+        }
         if(_valList.size == _capacity)
         {
             valueDelete();
@@ -141,7 +142,7 @@ private:
     valueNodeList _valList;
 };
 
-int main()
+int test0()
 {
     LRUCache ca = LRUCache(2);
     ca.put(1, 1);
@@ -160,7 +161,47 @@ int main()
     return 0;
 }
 
+int test1()
+{
+    LRUCache ca = LRUCache(2);
+    ca.put(2, 1);
+    ca.put(2, 2);
+    cout << ca.get(2) << endl;
+    ca.put(1, 1);
+    ca.put(4, 1);
+    cout << ca.get(2) << endl;
+}
 
+int test2()
+{
+    LRUCache ca = LRUCache(2);
+    cout << ca.get(2) << endl;
+    ca.put(2, 6);
+    cout << ca.get(1) << endl;
+    ca.put(1, 5);
+    ca.put(1, 2);
+    cout << ca.get(1) << endl;
+    cout << ca.get(2) << endl;
+}
+
+int test3()
+{
+    LRUCache ca = LRUCache(2);
+    ca.put(2, 1);
+    ca.put(1, 1);
+    ca.put(2, 3);
+    ca.put(4, 1);
+    cout << ca.get(1) << endl;
+    cout << ca.get(2) << endl;
+}
+
+int main()
+{
+    //test1();
+    //test2();
+    test3();
+    return 0;
+}
 
 
 
